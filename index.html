@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prem Shankar — Portfolio</title>
+  <meta name="description" content="Prem Shankar — Creative Web Developer. Premium portfolio with neon-dark theme, showcase animations & interactive UI."/>
+  <meta name="author" content="Prem Shankar" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><text y=%2220%22 font-size=%2220%22>💠</text></svg>">
+  
+  <!-- ✅ Correct way to link external CSS -->
+  <link rel="stylesheet" href="style.css">  
+
+</head>
+
+<body>
+  <div class="bg-shape s1"></div>
+  <div class="bg-shape s2"></div>
+
+  <div class="container">
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">PS</div>
+        <div>
+          <h1>Prem Shankar</h1>
+          <p>Creative Web Developer</p>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="3#project.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+      <div class="hero-left">
+        <div class="eyebrow">Premium portfolio</div>
+        <div class="headline">I build immersive <span class="accent">web experiences</span><br><span class="muted">that feel fast & polished</span></div>
+        <p class="sub">I’m <strong>Prem Shankar</strong>, a Creative Web Developer focused on polished UI, performant interactions and production-ready frontends.</p>
+
+        <div class="cta-row">
+          <button class="btn btn-cta" id="hireBtn">Hire Prem</button>
+          <a class="btn btn-ghost" href="#projects">Explore projects</a>
+        </div>
+
+        <div class="role-box"><span class="muted">Role: </span><span class="role" id="typedRole">Building...</span></div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="card">
+          <div class="card-hero">
+            <div class="avatar">PS</div>
+            <div class="card-info">
+              <h3>Prem Shankar</h3>
+              <p class="muted">Creative Web Developer • Roorkee Institute of Technology</p>
+              <div class="card-actions">
+                <div class="chip">React</div>
+                <div class="chip">Next.js</div>
+                <div class="chip">Design</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <div class="socials">
+              <a class="social" href="#">GH</a>
+              <a class="social" href="https://www.instagram.com/_lokesh_gujjar/" target="_blank">IN</a>
+              <a class="social" href="https://www.linkedin.com/in/prem-shankar-67800938a/" target="_blank">IG</a>
+            </div>
+            <div class="muted small">Available for freelance</div>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <div class="proj" data-idx="1">
+          <div class="num">01</div>
+          <h3>Razorpay Clone</h3>
+          <p class="muted">Frontend clone focusing on pixel-perfect UI and responsive layout.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="preview">Live preview →</div>
+        </div>
+
+        <div class="proj" data-idx="2">
+          <div class="num">02</div>
+          <h3>Discord Clone</h3>
+          <p class="muted">Frontend messaging interface replicate with interactive components.</p>
+          <div class="tags"><span>HTML</span><span>Tailwind</span><span>Vercel</span></div>
+          <div class="preview">Live preview →</div>
+        </div>
+
+        <div class="proj" data-idx="3">
+          <div class="num">03</div>
+          <h3>Password Generator</h3>
+          <p class="muted">Customizable password generator with copy & strength meter.</p>
+          <div class="tags"><span>JS</span><span>UX</span></div>
+          <div class="preview">Live preview →</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Skills & Contact</h2>
+      <div class="grid-2">
+        <div>
+          <p class="muted">Core skills</p>
+          <div class="skills">
+            <div>HTML</div><div>CSS</div><div>JavaScript</div><div>PYTHON</div><div>C</div><div>UI / UX</div><div>Performance</div><div>Accessibility</div>
+          </div>
+        </div>
+
+        <aside class="contact-card" id="contact">
+          <form id="contactForm">
+            <input class="input" type="text" id="cname" placeholder="Your name" required>
+            <input class="input" type="email" id="cemail" placeholder="Your email" required>
+            <input class="input" type="text" id="csubject" placeholder="Subject" required>
+            <textarea class="input" id="cmessage" placeholder="Message" required></textarea>
+            <button class="btn btn-cta" type="submit">Send message</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-row">
+        <div><strong>Prem Shankar</strong><div class="muted small">© <span id="yr"></span> — Built with care</div></div>
+        <div class="socials">
+          <a class="social" href="#">GH</a>
+          <a class="social" href="https://www.instagram.com/_lokesh_gujjar/" target="_blank">IG</a>
+          <a class="social" href="https://www.linkedin.com/in/prem-shankar-67800938a/" target="_blank">LD</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Skills — Prem Shankar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #0ff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #a020f0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #0ff;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    .skills-container {
+      width: 80%;
+      margin: 40px auto;
+      max-width: 800px;
+    }
+
+    .skill {
+      margin: 25px 0;
+    }
+
+    .skill-name {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .progress-bar {
+      height: 12px;
+      width: 100%;
+      background: #1a1a1a;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #00ffff, #a020f0);
+      border-radius: 6px;
+      transition: width 2s ease-in-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      border-top: 1px solid #0ff;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="project.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+  </header>
+
+  <h1>My Skills</h1>
+
+  <div class="skills-container">
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="progress-bar"><div class="progress" data-skill="95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="progress-bar"><div class="progress" data-skill="90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="progress-bar"><div class="progress" data-skill="80%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">PYTHON</div>
+      <div class="progress-bar"><div class="progress" data-skill="70%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">C</div>
+      <div class="progress-bar"><div class="progress" data-skill="60%"></div></div>
+    </div>
+  </div>
+
+  <footer>© 2025 Prem Shankar — All Rights Reserved</footer>
+
+  <script>
+    // Animate skill bars when page loads
+    window.addEventListener("load", () => {
+      const progresses = document.querySelectorAll(".progress");
+      progresses.forEach((bar) => {
+        const width = bar.getAttribute("data-skill");
+        bar.style.width = width;
+      });
+    });
+  </script>
+</body>
+</html>

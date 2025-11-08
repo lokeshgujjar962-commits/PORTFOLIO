@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Prem Shankar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-bottom: 1px solid #0ff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #a020f0;
+    }
+
+    .resume-container {
+      width: 85%;
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(20, 20, 20, 0.8);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      transition: 0.4s;
+    }
+
+    .resume-container:hover {
+      box-shadow: 0 0 35px rgba(160, 32, 240, 0.4);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #0ff;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h2 {
+      border-left: 4px solid #0ff;
+      padding-left: 10px;
+      text-align: left;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .info, .education, .experience, .skills {
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .info strong {
+      color: #a020f0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #0ff;
+      margin-top: 60px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .resume-container {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="project.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+  </header>
+
+  <div class="resume-container" id="resume">
+    <h1>Prem Shankar</h1>
+    <p style="text-align:center; color:#ccc;">Frontend Developer | UI Designer | Web Enthusiast</p>
+
+    <div class="section info">
+      <h2>Personal Info</h2>
+      <p><strong>Email:</strong> premshankar@email.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prem-shankar-67800938a/" target="_blank" style="color:#0ff;">linkedin.com/in/prem-shankar</a></p>
+      <p><strong>Location:</strong> India</p>
+    </div>
+
+    <div class="section education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Technology (B.Tech)</strong> — Computer Science, XYZ University (2022–2026)</li>
+      </ul>
+    </div>
+
+    <div class="section experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Frontend Developer Intern</strong> — Web Solutions Pvt. Ltd. (2024–2025)<br>
+          • Built interactive UIs using HTML, CSS, JS<br>
+          • Improved page load speed by 30%<br>
+          • Collaborated with backend team for API integration</li>
+      </ul>
+    </div>
+
+    <div class="section skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript, React.js</li>
+        <li>Node.js, Express, MongoDB</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+        <li>UI/UX & Figma</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>© 2025 Prem Shankar — All Rights Reserved</footer>
+</body>
+</html>
